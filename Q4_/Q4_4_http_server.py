@@ -1152,31 +1152,6 @@ def handle_client_request(resource, client_socket):
     client_socket.send(data.encode())
     return None
 
-
-    """
-
-    if resource == '':
-        url = DEFAULT_URL
-    else:
-        url = resource
-
-    # TO DO: check if URL had been redirected, not available or other error code. For example:
-    if url in REDIRECTION_DICTIONARY:
-        # TO DO: send 302 redirection response
-
-    # TO DO: extract requested file tupe from URL (html, jpg etc)
-    if filetype == 'html':
-        http_header = # TO DO: generate proper HTTP header
-    elif filetype == 'jpg':
-        http_header = # TO DO: generate proper jpg header
-    # TO DO: handle all other headers
-
-    # TO DO: read the data from the file
-    data = get_file_data(filename)
-    http_response = http_header + data
-    client_socket.send(http_response.encode())
-    """
-
 def validate_http_request(request):
 
     valid_http = True
