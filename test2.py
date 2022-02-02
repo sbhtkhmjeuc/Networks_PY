@@ -6,3 +6,5 @@ def dns_filter(packet):
 
 print('Starting to Sniff !!')
 scapy.sniff(count = 1, lfilter = dns_filter)        
+
+sdfsf
